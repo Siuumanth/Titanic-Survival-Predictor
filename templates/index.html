@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<h2>Passenger Survivability Predictor</h2>
+<div>
+
+<form action="/submit" method="POST">
+  <label for="Pclasss">Passenger Class:</label><br>
+  <input type="text" id="boxclass" name="pclass" ><br>
+
+  <label for="sex">Sex</label><br>
+  <input type="text" id="sex" name="sex" ><br><br>
+
+  <label for="age">Age:</label><br>
+  <input type="text" id="age" name="age" ><br><br>
+
+  <label for="Sibsp">SibSp</label><br>
+  <input type="text" id="sibsp" name="sibsp" ><br><br>
+
+  <label for="Parch">Parch:</label><br>
+  <input type="text" id="parch" name="parch" ><br><br>
+
+  <label for="Fare">Fare:</label><br>
+  <input type="text" id="fare" name="fare" ><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</div>
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/submit".</p>
+
+</body>
+</html>
