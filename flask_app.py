@@ -2,7 +2,7 @@ import pickle
 import pandas as pd
 from flask import Flask,render_template,redirect,url_for,request
 from flask_cors import CORS
-from Kaggle_Contest_main import Titanic
+from Kaggle_Contest_main import Titanic_DT
 
 
 with open('saved_model.pkl', 'rb') as file:
@@ -58,7 +58,7 @@ def result(res):
         sur="Good News!! The passenger has SURVIVED!!"
     else:
         sur="Unfortunately, the passenger did not survive :("
-    ac=int(Titanic.calculate_accuracy()*100)
+    ac=int(Titanic_DT.calculate_accuracy()*100)
     ac=str(ac)+'%'
     return render_template('result.html',survival=sur,acc=ac)
 
